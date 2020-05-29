@@ -33,23 +33,29 @@
         firebase.initializeApp(firebaseConfig);
     </script>
 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
 </head>
 <body>
-    <h1>Registrom</h1>
-    <input id="email" type="email" placeholder="Email" />
-    <br />
-    <input id="pass" type="password" placeholder="Password" />
-    <br />
-    <input id="pass2" type="password" placeholder="Confirmar" />
-    <br />
-    <button onclick="registrar()">Enviar</button>
+    <div class="mx-auto" style="width: 200px;">
+       <h1><span class="badge badge-secondary">Recuperar</span></h1>
+        <input  id="email" class="form-group" type="email" placeholder="Email" />
+        <br />
+        <input class="form-group" id="pass" type="password" placeholder="Password" />
+        <br />
+        <input class="form-group" id="pass2" type="password" placeholder="Confirmar" />
+        <br />
+        <button class="btn btn-primary" onclick="registrar()">Enviar</button>
+    </div>
+    <div class="mx-auto" style="width: 200px;">
+        <h1><span class="badge badge-secondary">Recuperar</span></h1>
+        <input class="form-group" id="email2" type="email" placeholder="Email" />
+        <br />
+        <button onclick="reset()" class="btn btn-primary">Recuperar</button>
+    </div>
 
-    <h1>Resset</h1>
-    <input id="email2" type="email" placeholder="Email" />
-    <br />
-    <button onclick="reset()">Recuperar</button>
-
-    <script src="app.js"></script>
+        <script src="app.js"></script>
 </body>
 
 </html>
