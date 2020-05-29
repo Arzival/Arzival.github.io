@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Document</title>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-app.js"></script>
+
+
+    <!-- Add Firebase products that you want to use -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-auth.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/7.14.5/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyBW_yx37KsivlpmjGD27qD07XFs4udXcdo",
+            authDomain: "tableroapp-fda5b.firebaseapp.com",
+            databaseURL: "https://tableroapp-fda5b.firebaseio.com",
+            projectId: "tableroapp-fda5b",
+            storageBucket: "tableroapp-fda5b.appspot.com",
+            messagingSenderId: "446392823845",
+            appId: "1:446392823845:web:40e4b015d82496eee7cfcc"
+        };
+        // Initialize Firebase
+        firebase.initializeApp(firebaseConfig);
+    </script>
+
+</head>
+<body>
+    <h1>Registro</h1>
+    <input id="email" type="email" placeholder="Email" />
+    <br />
+    <input id="pass" type="password" placeholder="Password" />
+    <br />
+    <input id="pass2" type="password" placeholder="Confirmar" />
+    <br />
+    <button onclick="registrar()">Enviar</button>
+
+    <h1>Resset</h1>
+    <input id="email2" type="email" placeholder="Email" />
+    <br />
+    <button onclick="reset()">Recuperar</button>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
