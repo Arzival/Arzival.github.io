@@ -1,3 +1,4 @@
+
 function registrar() {
     var email = document.getElementById('email').value;
     var pass = document.getElementById('pass').value;
@@ -9,18 +10,20 @@ function registrar() {
             var errorMessage = error.message;
 
             window.alert("Error, llenar todos los campos.\nLa contraseña debe tener al menos 6 caracteres.\nVerificar el correo, puede ser que ya este registrado");
-
+            
             // ...
         });
-        location.reload();
-        window.alert("Registro con exito");
+        window.alert("Registro exitoso");
+        
     } else {
         window.alert("Error, las contraseñas deben coincidir");
+        
 
     }
 
     
-    
+
+
 }
 
 function reset() {
@@ -38,3 +41,4 @@ function reset() {
     });
 
 }
+
