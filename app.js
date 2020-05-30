@@ -12,6 +12,8 @@ function registrar() {
 
             // ...
         });
+        location.reload();
+        window.alert("Registro con exito");
     } else {
         window.alert("Error, las contraseñas deben coincidir");
 
